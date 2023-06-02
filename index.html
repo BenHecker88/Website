@@ -6,22 +6,106 @@ h1 {
   color:red;
 }
 
-p1 {
+p {
   text-align: center;
   color: blue;
-  size: large;
+  font-size: xx-large;
+}
+
+h2 {
+  text-align: center;
+  color: orange;
+  font-size: x-large;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 </style>
 <head>
 <title>Ben's Website</title>
 </head>
 <body>
-
-<h1>Ben's Website</h1>
-<p1>With this website i will be making how to make games showcases and helping with code.</p>
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/_Fgc2P0fXfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   
-<body style="background-color:pink;">
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="aboutme.html">About Me</a>
+  <div class="dropdown">
+    <button class="dropbtn">Links 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="socials.html">Socials</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+</div>
+  
+<h1>Ben's Website</h1>
+<p>With this website it is just for me to code and test!!!</p>
+<h2>So this is just here for fun idk waht i am gonna do with it!!!!!!!!!</h2>
+  
+<body style="background-color:black;">
 </body>
 </html>
